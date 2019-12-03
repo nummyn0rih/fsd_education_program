@@ -43,9 +43,15 @@ body {
 	border-radius: 22px;
 }
 
-/*----- Модификатор темной темы блока button -----*/
-.button_theme_dark {
+/*----- Модификатор purple темы блока button -----*/
+.button_theme_purple {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border: 0px;
+}
+
+/*----- Модификатор green темы блока button -----*/
+.button_theme_green {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 	border: 0px;
 }
 
