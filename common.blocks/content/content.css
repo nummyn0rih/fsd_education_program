@@ -1,0 +1,11 @@
+.content {
+    position: absolute;
+    width: 1534px;
+    height: 1022px;
+    left: -47px;
+    top: -61px;
+
+    /* background: url(image.png); */
+
+    background-image: url(/img/image-3.jpg);
+}

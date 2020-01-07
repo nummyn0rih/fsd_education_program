@@ -19,8 +19,11 @@
   "homepage": "https://github.com/nummyn0rih/fsd_education_program#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-bem-bundle-builder": "^0.1.5",
+    "gulp-bem-bundler-fs": "0.0.10",
     "gulp-concat": "^2.6.1",
     "gulp-css-url-adjuster": "^0.2.3",
     "gulp-debug": "^4.0.0",

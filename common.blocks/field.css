@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 350px;
+	padding: 10px 10px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* ============================== */
+/* ============================== */
+
+.text {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	text-transform: uppercase;
+	/* Dark 100% */
+	color: #1F2041;
+}
+
+/* ============================== */
+/* ============================== */
+
+.field {
+	/* position: absolute; */
+	display: flex;
+	flex-direction: column;
+}
+
+.field__label {
+	/* position: absolute; */
+	width: 320px;
+	height: 15px;
+	margin-bottom: 5px;
+}
+
+.field__input {
+	/* position: absolute; */
+	width: 320px;
+	height: 44px;
+	padding-left: 15px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: none;
+}
+
+.field__input::placeholder {
+	width: 40px;
+	height: 18px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;	/* identical to box height, or 129% */
+	/* Dark 25% */
+	color: rgba(31, 32, 65, 0.25);
+}
+
+.field__input:hover, .field__input:focus {
+	outline: none;
+	/* Dark 50% */
+	border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+/* ============================== */
+/* ============================== */
+
+.dropdown {
+	font-weight: normal;
+	text-transform: none;
+	font-size: 14px;
+	line-height: 24px;
+	/* identical to box height, or 171% */
+	/* Dark 75% */
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.button {
+	display: flex;
+	justify-content: space-between;
+}
+
+.arrow_down {
+	margin-right: 10px;
+
+	font-size: 24px;
+	line-height: 24px;
+	/* Dark 50% */
+	color: rgba(31, 32, 65, 0.5);
+}
+
+
+
+
+
+
+
