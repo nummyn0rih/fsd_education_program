@@ -1,19 +1,16 @@
+@import '../fonts'
+@import '../color'
+    
 .dropdown
     display: flex
     justify-content: space-between
     align-items: center
+    font: $body
+    color: $darkShade75
+    cursor: pointer
 
-    font-weight: normal
-    text-transform: none
-    font-size: 14px
-    line-height: 24px
-    /* identical to box height, or 171% */
-    /* Dark 75% */
-    color: rgba(31, 32, 65, 0.75)
-
-    &__content
-        /* Dark 75% */
-        color: rgba(31, 32, 65, 0.75);
+    // &__content
+        // color: $darkShade75
 
     &__inner
         display: flex
@@ -23,8 +20,6 @@
 
     &__arrow
         margin-right: 10px
-
         font-size: 24px
         line-height: 24px
-        /* Dark 50% */
-        fill: rgba(31, 32, 65, 0.5)
+        fill: $darkShade50

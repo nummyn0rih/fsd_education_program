@@ -1,3 +1,6 @@
+@import '../fonts'
+@import '../color'
+    
 .form
     display: flex
     flex-direction: column
@@ -7,21 +10,19 @@
     width: 380px
     height: 374px
     padding: 40px 30px 30px
-    background: #FFFFFF
+    background: $white
     border: 1px solid rgba(0, 0, 0, 0.12)
     box-sizing: content-box
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
     border-radius: 4px
     
     &__header
-        font-family: 'Quicksand', sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 24px
-        line-height: 30px
-
-        /* Dark 100% */
-        color: #1F2041
+        font: $h1
+        color: $darkShade100
         
     &__inner
         display: flex
+
+    &__button
+        padding: 14px 20px 15px
+

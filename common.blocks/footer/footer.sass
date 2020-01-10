@@ -1,14 +1,23 @@
+@import '../fonts'
+@import '../color'
+    
 .footer
     display: flex
     flex-direction: column
-    font-size: 14px
-    line-height: 24px
-    /* Dark 75% */
-    color: rgba(31, 32, 65, 0.75)
+    font: $body
+    color: $darkShade75
 
-    &__nav
+    &__content
         display: flex
-        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1)
+        justify-content: space-between
+        padding: 100px 140px
+        box-shadow: 0px 1px 0px $darkShade10
+
+    &__inner
+        width: 260px
+
+    &__promo
+        margin-top: 20px
 
     &__copy-social
         display: flex
@@ -16,7 +25,7 @@
         align-items: center
         height: 70px
         padding: 0 140px
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+        box-shadow: 0px 10px 20px $darkShade5
 
     &__copy
         line-height: 17px;

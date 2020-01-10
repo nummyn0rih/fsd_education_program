@@ -1,3 +1,6 @@
+@import '../fonts'
+@import '../color'
+    
 .fieldset
     display: flex
     flex-direction: column
@@ -9,36 +12,35 @@
     &__header
         height: 15px
         margin-bottom: 5px
+        font: $h3
         text-transform: uppercase
 
     &__date
-        text-transform: uppercase
         width: 180px
+        text-transform: uppercase
+        cursor: text
+
+        &::-webkit-datetime-edit-month-field, &::-webkit-datetime-edit-day-field, &::-webkit-datetime-edit-year-field, &::-webkit-datetime-edit-text
+            font: $body
+            line-height: 18px
+            color: $darkShade75
+        &::-webkit-inner-spin-button
+            display: none
+        &::-webkit-clear-button
+            display: none
+        // &::-webkit-calendar-picker-indicator
+        //     background: orange
+        //     background-image: url('../img/expand_more.svg')
         // &::-webkit-datetime-edit
         //     padding: 0em
         // &::-webkit-datetime-edit-fields-wrapper
         //     background: silver
         // &::-webkit-datetime-edit-text
         //     color: red; padding: 0 0.3em
-        &::-webkit-datetime-edit-month-field, &::-webkit-datetime-edit-day-field, &::-webkit-datetime-edit-year-field, &::-webkit-datetime-edit-text
-            font-family: Montserrat
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            /* Dark 75% */
-            line-height: 18px
-            color: rgba(31, 32, 65, 0.75)
         // &::-webkit-datetime-edit-day-field
         //     color: green
         // &::-webkit-datetime-edit-year-field
         //     color: purple
-        &::-webkit-inner-spin-button
-            display: none
-        &::-webkit-calendar-picker-indicator
-            // background: orange
-            background-image: url('../img/expand_more.svg')
-        &::-webkit-clear-button
-            display: none
 
     &__field
         width: 100%

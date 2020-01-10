@@ -1,31 +1,29 @@
+@import '../fonts'
+@import '../color'
+    
 .button
-    position: relative
-    padding: 14px 20px 15px
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    border: 0px
+    background: $primaryGradient
+    border: none
     border-radius: 22px
-    font-size: 12px
-    line-height: 15px
+    font: $h3
     text-transform: uppercase
-    color: #FFFFFF
+    color: $white
 
     &:hover
+        cursor: pointer
         opacity: .5
 
     &_theme_light
-        width: 95px
-        height: 40px
-        background: #FFFFFF
-        border: 0px
-        margin: 2px 2px
-        color: #BC9CFF
+        background: $white
+        border: 2px solid $purple
+        color: $purple
 
     &_theme_icon-link
         width: 61px
         height: 15px
 
         &:hover
-            color: rgba(31, 32, 65, 0.5)
+            color: $darkShade50
 
     &_long
         width: 320px

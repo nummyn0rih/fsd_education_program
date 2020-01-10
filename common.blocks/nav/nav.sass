@@ -1,0 +1,21 @@
+@import '../fonts'
+@import '../color'
+
+.nav
+    display: flex
+    flex-direction: column
+
+    &__header
+        margin-bottom: 21px
+        font: $h3
+        text-transform: uppercase
+        color: $darkShade100
+
+    &__inner
+        list-style-type: none
+
+    &__item
+        line-height: 17px
+
+        &:not(:first-child)
+            margin-top: 20px

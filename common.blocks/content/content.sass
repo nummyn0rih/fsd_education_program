@@ -1,23 +1,19 @@
+@import '../fonts'
+@import '../color'
+    
 .content
+    height: 680px
     display: flex
     flex-direction: column
     justify-content: space-between
     padding: 70px 140px 18px
-    // position: absolute
-    // width: 1534px
-    // height: 600px
-    // left: -47px
-    // top: -61px
-    background-image: url(../img/image-3-1080.jpg)
-    background-repeat: no-repeat
-    background-size: cover
+    background-image: url(img/image-3-1080.jpg)
     background-position: center
+    background-size: cover
 
     &__slogan
         align-self: flex-end
+        text-align: right
         width: 297px;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: right;
-        /* Dark 75% */
-        color: rgba(31, 32, 65, 0.75)
+        font: $body
+        color: $darkShade75
