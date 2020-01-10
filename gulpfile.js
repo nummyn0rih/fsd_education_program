@@ -19,7 +19,7 @@ const del = require('del');
 
 const params = {
   out: 'public',
-  htmlSrc: 'index.html',
+  htmlSrc: 'index copy.html',
   levels: [
     'common.blocks',
     'desktop.blocks'
@@ -94,7 +94,7 @@ gulp.task('server', () => {
     server: params.out
   });
 
-  // gulp.watch('*.html', ['html']);
+  gulp.watch('*.html', gulp.series('html'));
   gulp.watch('common.blocks/**/*.sass', gulp.series('sass'));
 
   // gulp.watch(params.levels.map((level) => {
@@ -105,12 +105,13 @@ gulp.task('server', () => {
 
 // gulp.task('build', gulp.series('sass'));
 
-// gulp.task('html', () => {
-//   gulp.src(params.htmlSrc)
-//   .pipe(rename('index.html'))
-//   .pipe(gulp.dest(params.out))
-//   .pipe(reload({ stream: true }));
-// });
+gulp.task('html', () => {
+  return gulp.src(params.htmlSrc)
+    .pipe(rename('index.html'))
+    .pipe(debug())
+    .pipe(gulp.dest(params.out))
+    .pipe(reload({ stream: true }));
+});
 
 gulp.task('sass', () => {
   return gulp.src('common.blocks/**/*.sass')

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toxin</title>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="logo"src="../img/Logo.png" alt="Toxin">
+        <div class="header__inner">
+            <nav class="menu">
+                <ul class="menu__inner">
+                    <li class="menu__item"><a class="link menu__link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Услуги</a class="link"></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Соглашения</a></li>
+                </ul>
+            </nav>
+            <form class="auth" action="#">
+                <button class="button auth__item" type="submit">Войти</button>
+                <button class="button auth__item" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="content">
+        <form class="form" action="#" method="GET" name="guests">
+            <h2 class="form__header">Найдём номера под ваши пожелания</h2>
+            <div class="form__inner">
+                <fieldset class="fieldset" name="arrival">
+                    <legend class="fieldset__header">прибытие</legend>
+                    <input class="fieldset__date field" type="date" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+                <fieldset class="fieldset" name="checkOut">
+                    <legend class="fieldset__header">выезд</legend>
+                    <input class="fieldset__date field" type="date" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+            </div>
+            <fieldset class="fieldset" name="numberOfGuests">
+                <legend class="fieldset__header">гости</legend>
+                <button class="fieldset__field field dropdown" id="btn" value="">
+                    <span class="dropdown__content">Сколько гостей</span>
+                    <div class="dropdown__inner">
+                    <img class="dropdown__arrow" src="../img/expand_more.svg" alt="arrow_down"></div>
+                </button>
+            </fieldset>
+    
+            <button class="button">подобрать номер</button>
+        </form>
+        <p class="content__slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__nav">
+            <img class="logo"src="../img/Logo.png" alt="Toxin">
+            <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p c>
+            <nav class="menu">
+                <ul class="menu__inner menu_vertical">
+                    <li class="menu__item"><a class="link menu__link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Услуги</a class="link"></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Соглашения</a></li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <ul class="menu__inner menu_vertical">
+                    <li class="menu__item"><a class="link menu__link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Услуги</a class="link"></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Соглашения</a></li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <ul class="menu__inner menu_vertical">
+                    <li class="menu__item"><a class="link menu__link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Услуги</a class="link"></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="#">Соглашения</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footer__copy-social">
+            <p class="footer__copy">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="footer__social">T F I</div>
+        </section>
+    </footer>
+
+</html>
