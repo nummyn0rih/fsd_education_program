@@ -19,7 +19,7 @@ const del = require('del');
 
 const params = {
   out: 'public',
-  htmlSrc: 'index copy.html',
+  htmlSrc: 'index_home_page.html',
   levels: [
     'common.blocks',
     'desktop.blocks'
