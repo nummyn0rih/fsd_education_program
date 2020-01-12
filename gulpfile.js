@@ -19,7 +19,7 @@ const del = require('del');
 
 const params = {
   out: 'public',
-  htmlSrc: 'index_home_page.html',
+  htmlSrc: 'index_guests_dropdown.html',
   levels: [
     'common.blocks',
     'desktop.blocks'
