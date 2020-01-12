@@ -1,7 +1,29 @@
 @import '../fonts/Quicksand'
 @import '../fonts/Montserrat'
-    
-$h1: normal bold 24px/30px Quicksand
-$h2: normal bold 19px/24px Quicksand
-$h3: normal bold 12px/15px Montserrat
-$body: normal normal 14px/24px Montserrat
+@import '../fonts/Roboto'
+
+@mixin h1()
+    font:
+        family: Quicksand, Roboto, sans-serif
+        weight: bold
+        size: 24px
+    line-height: 30px
+
+@mixin h2()
+    @include h1
+    font-size: 19px
+    line-height: 24px
+
+@mixin h3()
+    font:
+        family: Montserrat, sans-serif
+        weight: bold
+        size: 12px
+    line-height: 15px
+
+@mixin body()
+    @include h3
+    font:
+        weight: normal
+        size: 14px
+    line-height: 24px

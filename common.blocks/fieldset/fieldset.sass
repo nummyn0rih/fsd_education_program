@@ -12,7 +12,7 @@
     &__header
         height: 15px
         margin-bottom: 5px
-        font: $h3
+        @include h3
         text-transform: uppercase
 
     &__date
@@ -21,7 +21,7 @@
         cursor: text
 
         &::-webkit-datetime-edit-month-field, &::-webkit-datetime-edit-day-field, &::-webkit-datetime-edit-year-field, &::-webkit-datetime-edit-text
-            font: $body
+            @include body
             line-height: 18px
             color: $darkShade75
         &::-webkit-inner-spin-button
