@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toxin</title>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="logo"src="img/Logo.svg" alt="Toxin">
+        <div class="header__inner">
+            <nav class="menu">
+                <ul class="menu__inner">
+                    <li class="menu__item"><a class="link" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="link" href="#">Услуги<svg class="arrow_down arrow_menu"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/>
+                        </svg></a>
+                    </li>
+                    <li class="menu__item"><a class="link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="link" href="#">Соглашения<svg class="arrow_down arrow_menu"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/>
+                        </svg></a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="auth" action="#">
+                <button class="auth__item button button_theme_light" type="submit">Войти</button>
+                <button class="auth__item button button_theme_dark" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="content">
+        <form class="form" action="#" method="GET" name="guests">
+            <h1 class="form__header">Найдём номера под ваши пожелания</h1>
+            <div class="form__inner">
+                <fieldset class="fieldset" name="arrival">
+                    <legend class="fieldset__header">прибытие</legend>
+                    <input class="fieldset__date field" type="date" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+                <fieldset class="fieldset" name="checkOut">
+                    <legend class="fieldset__header">выезд</legend>
+                    <input class="fieldset__date field" type="date" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+            </div>
+            <fieldset class="fieldset" name="numberOfGuests">
+                <legend class="fieldset__header">гости</legend>
+                <button class="fieldset__field dropdown" value="">
+                    <span class="dropdown__content">Сколько гостей</span>
+                    <svg class="arrow_down arrow_field" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/>
+                    </svg>
+                </button>
+                <fieldset class="quantity quantity_disabled" name="quantity">
+                    <div class="quantity__change">
+                        <label class="quantity__label" for="">взрослые</label>
+                        <div class="quantity__counter">
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement">-</span></button>
+                            <label class="quantity__count" for="">0</label>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
+                        </div>
+                    </div>
+                    <div class="quantity__change">
+                        <label class="quantity__label" for="">дети</label>
+                        <div class="quantity__counter">
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement">-</span></button>
+                            <label class="quantity__count">0</label>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
+                        </div>
+                    </div>
+                    <div class="quantity__change">
+                        <label class="quantity__label" for="">младенцы</label>
+                        <div class="quantity__counter">
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement" disabled>-</span></button disabled>
+                            <label class="quantity__count" for="">0</label>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
+                        </div>
+                    </div>
+                    <div class="quantity__inner">
+                        <button class="button button_theme_icon-link-dark clear">очистить</button>
+                        <button class="button button_theme_icon-link-purple applay">применить</button>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <button class="button form__button button_theme_dark">подобрать номер
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow_forward" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                </svg>
+            </button>
+        </form>
+        <p class="content__slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+    </main>
+
+    <footer class="footer">
+        <article class="footer__content">
+            <div class="footer__inner">
+                <img class="logo" src="img/Logo.svg" alt="Toxin">
+                <p class="footer__promo">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p c>
+            </div>
+            <nav class="nav">
+                <h3 class="nav__header">навигация</h3>
+                <ul class="nav__inner">
+                    <li class="nav__item"><a class="link" href="#">О нас</a></li>
+                    <li class="nav__item"><a class="link" href="#">Новости</a></li>
+                    <li class="nav__item"><a class="link" href="#">Служба поддержки</a></li>
+                    <li class="nav__item"><a class="link" href="#">Услуги</a></li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <h3 class="nav__header">о нас</h3>
+                <ul class="nav__inner">
+                    <li class="nav__item"><a class="link" href="#">О сервисе</a></li>
+                    <li class="nav__item"><a class="link" href="#">Наша команда</a></li>
+                    <li class="nav__item"><a class="link" href="#">Вакансии</a></li>
+                    <li class="nav__item"><a class="link" href="#">Инвесторы</a></li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <h3 class="nav__header">служба поддержки</h3>
+                <ul class="nav__inner">
+                    <li class="nav__item"><a class="link" href="#">Соглашения</a></li>
+                    <li class="nav__item"><a class="link" href="#">Сообщества</a></li>
+                    <li class="nav__item"><a class="link" href="#">Связь с нами</a></li>
+                </ul>
+            </nav>
+            <form class="subscribe" action="#" method="GET" name="subscribe">
+                <h3 class="subscribe__header">подписка</h3>
+                <p class="subscribe__info">Получайте специальные предложения и новости сервиса</p>
+                <input class="field" type="email" placeholder="Email">
+                <!-- <fieldset class="" name="email">
+                    <input class="field" type="email" placeholder="Email">
+                    <button class="field">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow_forward"
+                                width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </button>
+                </fieldset> -->
+            </form>
+        </article>
+        <article class="footer__copy-social">
+            <p class="footer__copy">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="social">
+            <svg class="social__item" aria-hidden="true" focusable="false" role="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <linearGradient id="primary-gradient" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#BC9CFF"/>
+                    <stop offset="100%" stop-color="#8BA4F9"/>
+                </linearGradient>
+                <path fill="url(#primary-gradient)" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>            
+            <svg class="social__item" aria-hidden="true" focusable="false" role="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="url(#primary-gradient)" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+            <svg class="social__item" aria-hidden="true" focusable="false" role="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="url(#primary-gradient)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+            </div>
+        </article>
+    </footer>
+
+    <script src="index.js"></script>
+</html>
