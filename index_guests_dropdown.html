@@ -50,7 +50,7 @@
             </div>
             <fieldset class="fieldset" name="numberOfGuests">
                 <legend class="fieldset__header">гости</legend>
-                <button class="fieldset__field dropdown" id="btn" value="">
+                <button class="fieldset__field dropdown" value="">
                     <span class="dropdown__content">Сколько гостей</span>
                     <svg class="arrow_down arrow_field" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/>
@@ -60,30 +60,30 @@
                     <div class="quantity__change">
                         <label class="quantity__label" for="">взрослые</label>
                         <div class="quantity__counter">
-                            <button class="quantity__shift quantity__shift_disabled"><span class="quantity__decrement">-</span></button>
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement">-</span></button>
                             <label class="quantity__count" for="">0</label>
-                            <button class="quantity__shift"><span class="">+</span></button>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
                         </div>
                     </div>
                     <div class="quantity__change">
                         <label class="quantity__label" for="">дети</label>
                         <div class="quantity__counter">
-                            <button class="quantity__shift quantity__shift_disabled"><span class="quantity__decrement">-</span></button>
-                            <label class="quantity__count" for="">0</label>
-                            <button class="quantity__shift"><span class="">+</span></button>
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement">-</span></button>
+                            <label class="quantity__count">0</label>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
                         </div>
                     </div>
                     <div class="quantity__change">
                         <label class="quantity__label" for="">младенцы</label>
                         <div class="quantity__counter">
-                            <button class="quantity__shift quantity__shift_disabled"><span class="quantity__decrement">-</span></button>
+                            <button class="quantity__shift decrement" disabled><span class="quantity__decrement" disabled>-</span></button disabled>
                             <label class="quantity__count" for="">0</label>
-                            <button class="quantity__shift"><span class="">+</span></button>
+                            <button class="quantity__shift increment"><span class="">+</span></button>
                         </div>
                     </div>
                     <div class="quantity__inner">
-                        <button class="button button_theme_icon-link-dark">очистить</button>
-                        <button class="button button_theme_icon-link-purple">применить</button>
+                        <button class="button button_theme_icon-link-dark clear">очистить</button>
+                        <button class="button button_theme_icon-link-purple applay">применить</button>
                     </div>
                 </fieldset>
             </fieldset>
