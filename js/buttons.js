@@ -37,21 +37,9 @@ document.addEventListener('click', (event) => {
         }
     }
 
-    if (buttonClassList.contains('applay')) {
-        // const fieldset = button.parentElement.parentElement;
-        // const lebels = fieldset.querySelectorAll('.quantity__count');
-        // const minuses = fieldset.querySelectorAll('.decrement');
-        // for (let i = 0; i < lebels.length; i += 1) {
-        //     lebels[i].textContent = 0;
-        //     minuses[i].disabled = true;
-        // }
-    }
+    // if (buttonClassList.contains('applay')) {
+        
+    // }
 
     event.preventDefault();
 });
-
-// document.addEventListener('click', (event) => {
-//     const button = event.target.closest('button');
-//     if (!button) return;
-// };
-

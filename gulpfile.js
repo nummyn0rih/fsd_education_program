@@ -96,6 +96,7 @@ gulp.task('server', () => {
 
   gulp.watch('*.html', gulp.series('html'));
   gulp.watch('common.blocks/**/*.sass', gulp.series('sass'));
+  gulp.watch('js/**/*.js', gulp.series('script'));
 
   // gulp.watch(params.levels.map((level) => {
   //   const cssGlob = level + '/**/*.css';
@@ -149,6 +150,13 @@ gulp.task('sass', () => {
 //   }))
 //   .pipe(gulp.dest(path.join(params.out, 'images')));
 // });
+
+gulp.task('script', () => {
+  return gulp.src('js/**/*.js')
+  .pipe(concat('index.js'))
+  .pipe(gulp.dest(params.out))
+  .pipe(reload({ stream: true }));
+});
 
 gulp.task('del', () => {
   return del(['public']);
