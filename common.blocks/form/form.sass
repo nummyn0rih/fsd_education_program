@@ -7,14 +7,23 @@
     flex-wrap: nowrap
     justify-content: space-between
     align-items: stretch
-    width: 380px
-    height: 374px
     padding: 40px 30px 30px
     background: $white
     border: 1px solid rgba(0, 0, 0, 0.12)
     box-sizing: border-box
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
     border-radius: 4px
+
+    &_guests
+        width: 380px
+        height: 374px
+    
+    &_auth
+        position: fixed
+        width: 380px
+        height: 358px
+        top: calc( 50% - 190px )
+        left: calc( 50% - 179px )
     
     &__header
         @include h1
@@ -26,4 +35,7 @@
     &__button
         position: relative
         padding: 14px 20px 15px
+        margin-top: 30px
+        width: 100%
+        
 

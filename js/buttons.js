@@ -41,5 +41,10 @@ document.addEventListener('click', (event) => {
         
     // }
 
+    if (buttonClassList.contains('auth__item')) {
+        const modal = button.nextElementSibling;
+        modal.style.display = 'block';
+    }
+
     event.preventDefault();
 });

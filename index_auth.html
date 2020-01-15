@@ -30,14 +30,29 @@
             </nav>
             <form class="auth" action="#">
                 <button class="auth__item button button_theme_light" type="submit">Войти</button>
-                <!-- <fieldset class="form form_auth">Join</fieldset> -->
+                <div class="auth__modal">
+                    <fieldset class="form form_auth">
+                        <h1 class="form__header">Войти</h1>
+                        <input class="field field_auth" type="email" placeholder="Email">
+                        <input class="field field_auth" type="password" placeholder="Пароль">
+                        <button class="button form__button button_theme_dark">Войти
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow_forward" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                        <div class="auth__inner">
+                            <p class="auth__text">Нет аккаунта на Toxin?</p>
+                            <button class="button button_theme_light button_high">создать</button>
+                        </div>
+                    </fieldset>
+                </div>
                 <button class="auth__item button button_theme_dark" type="submit">Зарегистрироваться</button>
             </form>
         </div>
     </header>
 
     <main class="content">
-        <form class="form form_guests" action="#" method="GET" name="guests">
+        <!-- <form class="form form_guests" action="#" method="GET" name="guests">
             <h1 class="form__header">Найдём номера под ваши пожелания</h1>
             <div class="form__inner">
                 <fieldset class="fieldset" name="arrival">
@@ -93,7 +108,7 @@
                     <path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                 </svg>
             </button>
-        </form>
+        </form> -->
         <p class="content__slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
     </main>
 

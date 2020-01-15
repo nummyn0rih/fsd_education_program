@@ -1,3 +1,6 @@
+@import '../fonts'
+@import '../color'
+
 .auth
     display: flex
     flex-wrap: nowrap
@@ -6,3 +9,25 @@
         height: 34px
         margin-left: 20px
         padding: 0 20px
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+
+    &__text
+        @include body
+        line-height: 24px
+
+    &__modal
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        display: none
+        overflow: auto
+
+        // background-color: rgba(255,255,255,0)
+        // pointer-events: none

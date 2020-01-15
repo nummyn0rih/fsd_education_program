@@ -80,7 +80,7 @@ const del = require('del');
 
 const params = {
   out: 'public',
-  htmlSrc: 'index_guests_dropdown.html',
+  htmlSrc: 'index_auth.html',
   levels: [
     'common.blocks',
     'desktop.blocks'
